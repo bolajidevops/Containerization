@@ -30,17 +30,18 @@ A git add and commit are done. This allow git to be aware of files in my folder 
 
 - In my project directory (Containerization), an html and css file was created with a basic code for simple web application.
 
-See image below: 
+  See image below: 
 
 ![alt text](images/HTML&CSS.png)
 
-- In the same directory a Dockerfile was created to setup Nginx server
+- In the same directory a Dockerfile was created to setup Nginx.
 
-See image below: 
+  See image below: 
 
 ![alt text](images/Dockerfile.png)
 
-- The Dockerfile uses the official Nginx image and copies my HTML and CSS files into the default directory that Nginx serves from, which is /usr/share/nginx/html.
+- The Dockerfile uses the official Nginx image and copies my HTML and CSS files into the default directory that Nginx serves from, which is /usr/share/  
+  nginx/html.
 
  - The next step is to build the image and run the Docker Container
 
@@ -48,7 +49,7 @@ See image below:
 
 - After running the above command, docker will build my image base on the instructions in the Dockerfile inside the project foldeer named (containerization).
 
-See image below: 
+  See image below: 
 
 ![alt text](images/Docker-build.png)
 
@@ -85,11 +86,15 @@ The above command will prompt me to enter my Docker Hub username and password.
 
 `brew install kind`
 
-The above command install kind (kubernetes in Docker) on my system. See image below:
+The above command install kind (kubernetes in Docker) on my system. 
+
+See image below:
 
 ![alt text](images/install-kind.png)
 
-- After installing kind, we need to create a kind using the command `kind create cluster` This command creates a cluster named (kind) by default. See image below:
+- After installing kind, we need to create a kind using the command `kind create cluster` This command creates a cluster named (kind) by default.
+ 
+  See image below:
 
 ![alt text](images/Create-kind.png)
 
@@ -102,7 +107,7 @@ Creating a Kubernetes Deployment YAML file specifying the image and desired repl
 
 ![alt text](images/YAML.png)
 
-To create a Kubernetes Deployment YAML file that specifies a container image and the desired number of replicas, the above template is used.
+To create a Kubernetes Deployment YAML file that specifies a container image and the desired number of replicas, the above manifest is used.
 
 `kubectl apply -f deployment.yaml`
 
