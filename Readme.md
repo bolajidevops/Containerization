@@ -47,7 +47,7 @@ A git add and commit are done. This allow git to be aware of files in my folder 
 
  `docker build -t containerization .`
 
-- After running the above command, docker will build my image base on the instructions in the Dockerfile inside the project foldeer named (containerization).
+- After running the above command, Docker will build my image base on the instructions in the Dockerfile inside the project folder (containerization).
 
   See image below: 
 
